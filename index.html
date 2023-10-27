@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .deeplink-input {
+            width: 70%;
+            box-sizing: border-box; /* 保持输入框的总宽度包括内边距和边框 */
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" class="deeplink-input" id="product_id" value="carrefourone://?product_id=xxx">
+<button type="button" onclick="redirectUrl('product_id')">Go</button>
+<p/><p/>
+
+
+<script>
+    function redirectUrl(id) {
+        window.location.href = document.getElementById(id).value;
+    }
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
